@@ -16,13 +16,10 @@ public class MenuCard {
 
   /**
    *
-   * @param menuNumber represent number from menuCard
+   * @param menuNumber represents number from menuCard
    * @return chosen pizza
    */
   public Pizza getPizzaFromMenuCard(int menuNumber) {
-    if (menuNumber >= 1 && menuNumber <= menuCard.size()) {
       return menuCard.get(menuNumber-1);
-    }
-   else return null;
   }
 }

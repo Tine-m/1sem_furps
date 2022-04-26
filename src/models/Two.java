@@ -1,9 +1,9 @@
 package models;
 
-public class B {
+public class Two {
 
   public boolean doThis(int number) {
-    int result = new C().doThat(number);
+    int result = new Three().doThat(number);
     callMe(result);
     return true;
   }

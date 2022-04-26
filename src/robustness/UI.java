@@ -35,9 +35,8 @@ public class UI {
     System.out.print("Enter a decimal number: ");
     String inputAsString = in.next();
     NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
-    //NumberFormat format = NumberFormat.getInstance(Locale.US);
     Number number = format.parse(inputAsString);
-    double d = number.doubleValue(); //d is redundant, but good for demonstrating debug mode
+    double d = number.doubleValue();
     return d;
   }
 }

@@ -1,8 +1,8 @@
 package models;
 
-public class A {
+public class One {
 
   public void start() {
-    new B().doThis(10);
+    new Two().doThis(10);
   }
 }
