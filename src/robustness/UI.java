@@ -37,7 +37,7 @@ public class UI {
     NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
     //NumberFormat format = NumberFormat.getInstance(Locale.US);
     Number number = format.parse(inputAsString);
-    double d = number.doubleValue();
+    double d = number.doubleValue(); //d is redundant, but good for demonstrating debug mode
     return d;
   }
 }
