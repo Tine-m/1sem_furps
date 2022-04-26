@@ -2,12 +2,13 @@ package models;
 
 public class B {
 
-  public void doThis(int number) {
+  public boolean doThis(int number) {
     int result = new C().doThat(number);
     callMe(result);
+    return true;
   }
 
-  private boolean callMe(int result) {
-    return true;
+  private void callMe(int result) {
+
   }
 }
