@@ -20,6 +20,20 @@ public class MenuCard {
    * @return chosen pizza
    */
   public Pizza getPizzaFromMenuCard(int menuNumber) {
-      return menuCard.get(menuNumber-1);
+    // vores eget interne check
+    if (menuNumber >= 1 && menuNumber <= menuCard.size()) {
+      return menuCard.get(menuNumber - 1);
+    }
+    else
+      return null;
+  }
+
+  public Pizza getPizzaFromMenuCard2(int menuNumber) {
+    // vores eget interne check
+    if (menuNumber < 1 && menuNumber > menuCard.size()) {
+      throw new IllegalArgumentException();
+    }
+    else
+      return menuCard.get(menuNumber - 1);
   }
 }

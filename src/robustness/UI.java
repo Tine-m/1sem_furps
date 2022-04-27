@@ -13,11 +13,13 @@ public class UI {
     return in.nextInt();
   }
 
+
+
   public int readIntegerImproved() {
     System.out.print("Enter an integer: ");
     while (!in.hasNextInt()) {
       String text = in.next();
-      System.err.println(text + " is not an integer. Try again.");
+      System.out.println(text + " is not an integer. Try again.");
     }
     return in.nextInt();
   }
@@ -34,7 +36,7 @@ public class UI {
   public double readDoubleAsString() throws ParseException {
     System.out.print("Enter a decimal number: ");
     String inputAsString = in.next();
-    NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
+    NumberFormat format = NumberFormat.getInstance(Locale.US);
     Number number = format.parse(inputAsString);
     double d = number.doubleValue();
     return d;
