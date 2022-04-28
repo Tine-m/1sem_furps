@@ -11,5 +11,4 @@ public class B {
   public void doThis(int number) {
     int result = c.doThat(number);
   }
-
 }
